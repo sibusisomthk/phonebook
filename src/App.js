@@ -39,7 +39,7 @@ class App extends React.Component {
           {!this.state.showPageMenu ? <div className="phonebook-container">
             <Row className="nav-section">
               <Container className="nav-container">
-                <img src={phoneIcon} className="small-icon" /><div className="nav-label" onClick={() => this.onShowNavOptions(null)}>{this.props.currentSection == PageSection.CONTACTS ? 'Contacts' : 'Phone Books'}</div><img src={pusIcon} className="small-icon" />
+                <img src={this.props.currentSection == PageSection.CONTACTS?phoneIcon:phonebookIcon} className="small-icon" /><div className="nav-label" onClick={() => this.onShowNavOptions(null)}>{this.props.currentSection == PageSection.CONTACTS ? 'Contacts' : 'Phone Books'}</div><img src={pusIcon} className="small-icon" />
               </Container>
 
             </Row>
