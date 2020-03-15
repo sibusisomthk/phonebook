@@ -9,14 +9,12 @@ const actionsReducer = (state = initialState, action) => {
         case actionTypes.UPDATE_PHONEBOOK:
             return {
                 ...state,
-                page: action.payload,
-                isOther: false,
+                phoneBooks: action.payload,
             }
         case actionTypes.UPDATE_CONTACTS:
             return {
                 ...state,
-                page: action.payload,
-                isOther: false,
+                contacts: action.payload,
             }
         default:
             return state
