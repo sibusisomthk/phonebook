@@ -1,0 +1,63 @@
+.contacts-container{
+    display: inline-block;
+    padding: 0 !important;
+}
+.header{
+    display: inline-block;
+    background: transparent;
+    height: 110px;
+    position: absolute;
+    width: 100%;
+    background: #1e1d1d;
+    border-top-right-radius: 50px 40px;
+    border-top-left-radius: 50px 40px;
+}
+.header-content{
+    height: 80px;
+    background: transparent;
+    width: 100%;
+}
+.header-concave{
+    height: 30px;
+    width: 100%;
+    background: #303030;
+    border-top-right-radius: 50px 40px;
+    border-top-left-radius: 50px 40px;
+}
+.list-container{
+    border-top-right-radius: 50px 40px;
+    border-top-left-radius: 50px 40px;
+    background: #303030;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 80px;
+    margin-top: 120px;
+}
+.contact-container{
+    margin: 15px 15px 0px 15px;
+}
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.profile-image{
+
+}
+.name{
+    color: white;
+    text-align: left;
+    width: 50%;
+}
+.contact-underline{
+    border-top: 1px solid whitesmoke;
+    border-radius: 5px;
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+}
+/*mobile view*/
+@media only screen and (max-width: 600px) {
+
+}

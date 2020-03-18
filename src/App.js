@@ -10,7 +10,8 @@ import phoneIcon from './Components/Asserts/Icons/telephone.svg';
 import phonebookIcon from './Components/Asserts/Icons/phonebook.svg'
 import * as PageSection from './Constants/Enums/pageSection'
 import * as alertActions from './Actions/alertActions';
-
+import Contacts from './Components/Constainers/Contacts';
+import Phonebooks from './Components/Constainers/Phonebooks';
 
 class App extends React.Component {
   constructor(props) {
@@ -44,7 +45,9 @@ class App extends React.Component {
 
             </Row>
             <Row className="body-section">
-
+                {this.props.currentSection == PageSection.CONTACTS?<Contacts/>
+                                                                  :this.props.currentSection == PageSection.PHONEBOOKS?<Phonebooks/>
+                                                                                                                      : null}
             </Row>
             <Row className="footer-section">
               <div className="footer">

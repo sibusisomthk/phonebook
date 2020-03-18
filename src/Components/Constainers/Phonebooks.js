@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Button, Overlay } from 'react-bootstrap';
 import { connect } from 'react-redux';
+import '../Styles/phonebooks.css';
+
 class Phonebooks extends Component {
     constructor(props) {
         super(props);
@@ -21,13 +23,23 @@ class Phonebooks extends Component {
         ));
         //styles
         return (
-            <Container>
+            <Container className="phonebook-container">
+                <div className="header">
+                    <div className="header-content">
+                    </div>
+                    <div className="header-concave">
+                    </div>
+                </div>
+
+                <div className="list-container">
+                </div>              
             </Container >
         );
     }
 }
 const mapStateToProps = state => {
     return {
+        phonebooks: state.action.phonebooks
     };
 }
 //action creators
